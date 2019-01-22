@@ -9,13 +9,13 @@ class Big_dial:
     # 获取连接和日期参数
     def getconnect(self):
         # 数据库ip地址
-        host = "192.168.115.105"
+        host = "5"
         # 数据库名称
-        db = "news_manage_test"
+        db = ""
         # 登陆用户名
-        user = "root"
+        user = ""
         # 登陆密码
-        password = "Hik12345+"
+        password = "+"
         # 获取上一天日期
         today = datetime.date.today()
         oneday = datetime.timedelta(days=1)
