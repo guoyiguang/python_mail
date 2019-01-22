@@ -18,13 +18,13 @@ class Mail_total:
 
     def getconnect(self):
         # 数据库ip地址
-        host = "10.100.110.64"
+        host = ""
         # 数据库名称
         db = "news_manage"
         # 登陆用户名
-        user = "root"
+        user = ""
         # 登陆密码
-        password = "Hik12345+"
+        password = "+"
         # 链接数据库
         db = pymysql.connect(host, user, password, db, port=3306)
         # 使用cursor()的方法获取游标
@@ -104,22 +104,12 @@ class Mail_total:
         return html
     def send(self,html):
         mail_host = "smtp.edspay.com"  # 设置服务器
-        mail_user = "guoyiguang@edspay.com"  # 用户名
-        mail_pass = "aladin#2018"  # 口令
+        mail_user = ""  # 用户名
+        mail_pass = ""  # 口令
 
         sender = 'guoyiguang@edspay.com'
         # 添加接收人
-        receivers = ['827267162@qq.com',
-                     'liquan@edspay.com',
-                     'guwuyan@edspay.com',
-                     'jinxiaofeng@edspay.com',
-                     'shenjincheng@edspay.com',
-                     'yebaicheng@edspay.com',
-                     'wenjiezhen@edspay.com',
-                     'xingzhongcheng@edspay.com',
-                     'zhumingmin@edspay.com',
-                     'changhuajie@edspay.com',
-                     'huruixia@edspay.com'
+        receivers = [
                      ]  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
         # 定义邮件内容
         msgRoot = MIMEMultipart('related')
