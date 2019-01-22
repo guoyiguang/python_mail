@@ -25,13 +25,13 @@ class Operation_mail:
     '''获取链接'''
     def getconnect(self):
         # 数据库ip地址
-        host="192.168.115.105"
+        host=""
         # 数据库名称
-        db = "news_manage_test"
+        db = ""
         # 登陆用户名
-        user="root"
+        user=""
         # 登陆密码
-        password="Hik12345+"
+        password="+"
         # 获取上一天日期
         today = datetime.date.today()
         oneday = datetime.timedelta(days=1)
@@ -192,11 +192,11 @@ class Operation_mail:
         return html
     def send(self,html):
         mail_host = "smtp.edspay.com"  # 设置服务器
-        mail_user = "guoyiguang@edspay.com"  # 用户名
-        mail_pass = "aladin#2018"  # 口令
+        mail_user = "@edspay.com"  # 用户名
+        mail_pass = "#2018"  # 口令
 
         sender = 'guoyiguang@edspay.com'
-        receivers = ['827267162@qq.com','liquan@edspay.com','xuxiaoming@edspay.com','penghuaying@edspay.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
+        receivers = ['']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
         # 定义邮件内容
         msgRoot = MIMEMultipart('related')
         # 指定图片为当前目录
