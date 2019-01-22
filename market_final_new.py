@@ -25,13 +25,13 @@ class Mail:
 
     def getconnect(self):
         # 数据库ip地址
-        host = "10.100.110.72"
+        host = ""
         # 数据库名称
-        db = "news_manage"
+        db = ""
         # 登陆用户名
-        user = "root"
+        user = ""
         # 登陆密码
-        password = "Hik12345+"
+        password = ""
         # 获取上一天日期
         today = datetime.date.today()
         oneday = datetime.timedelta(days=1)
