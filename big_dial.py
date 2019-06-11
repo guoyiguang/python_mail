@@ -39,7 +39,7 @@ class Big_dial:
     # 将数据添加到指定数据库中
     def insert_data(self,df):
 
-        yconnect = create_engine('mysql+pymysql://root:Hik12345+@192.168.115.105:3306/m_eps?charset=utf8')
+        yconnect = create_engine('mysql+pymysql://root:Hik12345+@:3306/m_eps?charset=utf8')
         # pandas,表名，链接，库名，数据添加模式（追加），不存储索引
         pd.io.sql.to_sql(df,'big_dial_user',yconnect,schema='m_eps',if_exists='append',index=False)
 
